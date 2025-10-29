@@ -1,0 +1,393 @@
+/* Reset dan Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #1a3a1a;
+    background-color: #f0f1f8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #002293, #2d38cc);
+    color: white;
+    padding: 2rem 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+
+.profile-photo:hover {
+    transform: scale(1.1) rotate(2deg);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    border-color: #377aff;
+}
+
+
+.header-text {
+    text-align: left;
+}
+
+
+.header-text h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.slogan {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+
+/* Container untuk Nav, Section, Aside */
+.container {
+    flex: 1;
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+
+/* Navigation Styles */
+nav {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(45, 95, 45, 0.1);
+    border-left: 4px solid #002293;
+    height: fit-content;
+}
+
+
+nav h3 {
+    color: #002293;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #2d38cc;
+    padding-bottom: 0.5rem;
+}
+
+
+nav ul {
+    list-style: none;
+}
+
+
+nav li {
+    margin-bottom: 0.5rem;
+}
+
+
+nav a {
+    display: block;
+    color: #002293;
+    text-decoration: none;
+    padding: 0.8rem;
+    background-color: #e8edf5;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+}
+
+
+nav a:hover {
+    background-color: #2d38cc;
+    color: white;
+    border-left: 3px solid #002293;
+    padding-left: 1.2rem;
+}
+
+
+/* Section Styles */
+section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(45, 95, 45, 0.1);
+    border-left: 4px solid #2d38cc;
+}
+
+
+section h2 {
+    color: #002293;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #2d38cc;
+    padding-bottom: 0.5rem;
+}
+
+
+.content-section {
+    display: none;
+}
+
+
+.content-section.active {
+    display: block;
+}
+
+
+section p {
+    margin-bottom: 0.8rem;
+    color: #002293;
+}
+
+
+section ul {
+    margin-left: 1.5rem;
+}
+
+
+section li {
+    margin-bottom: 0.5rem;
+    color: #002293;
+}
+
+
+/* Aside Styles */
+aside {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(45, 95, 45, 0.1);
+    border-left: 4px solid #2d38cc;
+    height: fit-content;
+}
+
+
+aside h3 {
+    color: #002293;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #2d38cc;
+    padding-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+
+aside h3:first-child {
+    margin-top: 0;
+}
+
+
+.hobby-list,
+.social-media {
+    list-style: none;
+}
+
+
+.hobby-list li,
+.social-media li {
+    margin-bottom: 0.8rem;
+    color: #002293;
+}
+
+
+.social-media a {
+    color: #2d38cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+.social-media a:hover {
+    color: #002293;
+    text-decoration: underline;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #002293;
+    color: white;
+    padding: 1.5rem;
+    margin-top: auto;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 0 auto 1rem auto;
+    padding: 0 1rem;
+}
+
+
+.footer-left p,
+.footer-right p {
+    margin-bottom: 0.3rem;
+}
+
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-left a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-left a:hover {
+    color: #377aff;
+    text-decoration: underline;
+}
+
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+
+/* ===== RESPONSIVE: SMARTPHONE (max-width: 767px) ===== */
+@media screen and (max-width: 767px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header-text {
+        text-align: center;
+    }
+    
+    .header-text h1 {
+        font-size: 1.5rem;
+    }
+    
+    .profile-photo {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+    
+    nav,
+    section,
+    aside {
+        width: 100%;
+    }
+    
+    /* Footer tetap horizontal di HP */
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .footer-right {
+        text-align: right;
+    }
+    
+    /* Ukuran font lebih kecil di HP agar muat */
+    .footer-left p,
+    .footer-right p {
+        font-size: 0.85rem;
+    }
+}
+
+
+/* ===== RESPONSIVE: TABLET PORTRAIT (768px - 1023px) ===== */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    nav,
+    section,
+    aside {
+        width: 100%;
+    }
+}
+
+
+/* ===== RESPONSIVE: TABLET LANDSCAPE (1024px - 1279px) ===== */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    /* Nav di kiri 25% */
+    nav {
+        width: 25%;
+        flex: 0 0 25%;
+        display: block;
+    }
+    
+    /* Section di kanan 75% */
+    section {
+        width: 75%;
+        flex: 0 0 calc(75% - 1rem);
+    }
+    
+    /* Aside di bawah full width 100% */
+    aside {
+        width: 100%;
+        flex: 0 0 100%;
+        margin-top: 1rem;
+    }
+}
+
+
+
+/* ===== RESPONSIVE: DESKTOP (min-width: 1280px) ===== */
+@media screen and (min-width: 1280px) {
+    .container {
+        flex-direction: row;
+    }
+    
+    nav {
+        width: 25%;
+        flex: 0 0 25%;
+    }
+    
+    section {
+        width: 50%;
+        flex: 0 0 calc(50% - 2rem);
+    }
+    
+    aside {
+        width: 25%;
+        flex: 0 0 25%;
+    }
+}
